@@ -34,6 +34,8 @@ _ = Task.Run(() =>
                 {
                     var message = Encoding.UTF8.GetString(buffer);
 
+                    //clientSocket.Send("Got your message"u8.ToArray());
+                    
                     Console.WriteLine($"Message from client: {message}");
                     
                     Array.Fill(buffer, (byte)0);
