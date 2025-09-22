@@ -30,9 +30,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-
-        Console.WriteLine(Environment.UserName);
-
+        
         _tcpClient = new TcpClient();
         _synchronizationContext = SynchronizationContext.Current!;
 
