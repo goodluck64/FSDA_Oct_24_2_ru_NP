@@ -13,7 +13,7 @@ internal sealed class TcpChatServer : IDisposable
 
     public TcpChatServer()
     {
-        _listener = new TcpListener(IPEndPoint.Parse("127.0.0.1:8989"));
+        _listener = new TcpListener(IPEndPoint.Parse("172.20.208.162:8989"));
     }
 
     public Task Start()

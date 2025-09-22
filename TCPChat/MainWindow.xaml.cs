@@ -58,7 +58,7 @@ public partial class MainWindow : Window
     {
         try
         {
-            _tcpClient.Connect(IPEndPoint.Parse("127.0.0.1:8989"));
+            _tcpClient.Connect(IPEndPoint.Parse("172.20.208.162:8989"));
 
             var networkStream = _tcpClient.GetStream();
 
@@ -71,7 +71,15 @@ public partial class MainWindow : Window
                 {
                     var message = _reader.ReadLine();
 
-                    _synchronizationContext.Send(_ => { MessagesListBox.Items.Add(message); }, null);
+                    _synchronizationContext.Send(_ =>
+                    {
+                        if (message is not null)
+                        {
+                            MessagesListBox.Items.Add(message);
+                            MessagesListBox.ScrollIntoView(message);
+                        }
+                        
+                    }, null);
                 }
             }, TaskCreationOptions.LongRunning);
 
