@@ -34,7 +34,7 @@ internal sealed class TcpChatServer : IDisposable
                     Writer = new StreamWriter(networkStream),
                     Reader = new StreamReader(networkStream)
                 };
-
+                
                 _clients.Add(chatClient);
 
                 Task.Run(() =>
