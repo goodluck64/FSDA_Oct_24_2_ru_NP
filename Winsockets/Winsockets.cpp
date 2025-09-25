@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     addrinfo hints;
 
     ZeroMemory(&hints, sizeof(hints));
-
+    
     hints.ai_family = AF_INET;
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
@@ -83,10 +83,10 @@ int main(int argc, char* argv[])
                         static constexpr int bufferLength = 1024;
 
                         std::unique_ptr<char[]> buffer{new char[bufferLength]};
-
+                        
                         int bytesRead;
 
-                        while ((bytesRead = recv(clientSocket, buffer.get(), bufferLength, 0)))
+                        while ((bytesRead = recv(clientSocket, buffer.get(), bufferLength, 0)) != -1)
                         {
                             for (auto client : clients)
                             {

@@ -64,7 +64,7 @@ public partial class MainWindow : Window
 
             _reader = new StreamReader(networkStream);
             _writer = new StreamWriter(networkStream);
-
+            
             Task.Factory.StartNew(() =>
             {
                 while (true)
