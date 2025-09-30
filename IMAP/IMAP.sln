@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMAP", "IMAP.csproj", "{4E11B9BE-4522-45EF-A4D9-029FC3C73628}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E11B9BE-4522-45EF-A4D9-029FC3C73628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E11B9BE-4522-45EF-A4D9-029FC3C73628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E11B9BE-4522-45EF-A4D9-029FC3C73628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E11B9BE-4522-45EF-A4D9-029FC3C73628}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
