@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferClient", "FileTransferClient.csproj", "{011A128D-2C19-4538-B1FF-9A8A2A4C30C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{011A128D-2C19-4538-B1FF-9A8A2A4C30C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{011A128D-2C19-4538-B1FF-9A8A2A4C30C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{011A128D-2C19-4538-B1FF-9A8A2A4C30C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{011A128D-2C19-4538-B1FF-9A8A2A4C30C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
